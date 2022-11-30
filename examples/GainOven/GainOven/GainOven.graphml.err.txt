@@ -1,0 +1,17 @@
+Exception ArgumentException : Failed parsing node label
+Parent path: `Statemachine{gainOven}.State{COOKING}`
+Label: `heating
+state_heating();`
+Diagram id: `n0::n4::n2`
+Reason(s): mismatched input '(' expecting <EOF> at line 2 column 13. Offending symbol: `(`.
+
+   at StateSmith.Compiling.Compiler.PrintAndThrowIfNodeParseFail(DiagramNode diagramNode, Vertex parentVertex, LabelParser labelParser)
+   at StateSmith.Compiling.Compiler.ProcessNode(DiagramNode diagramNode, Vertex parentVertex)
+   at StateSmith.Compiling.Compiler.ProcessNode(DiagramNode diagramNode, Vertex parentVertex)
+   at StateSmith.Compiling.Compiler.ProcessNode(DiagramNode diagramNode, Vertex parentVertex)
+   at StateSmith.Compiling.Compiler.CompileDiagramNodesEdges(List`1 rootNodes, List`1 edges)
+   at StateSmith.Compiling.Compiler.CompileYedFile(String filepath)
+   at StateSmith.Runner.SmRunner.CompileFile()
+   at StateSmith.Runner.SmRunner.RunCompiler()
+   at StateSmith.Runner.SmRunner.RunInner()
+   at StateSmith.Runner.SmRunner.Run()
